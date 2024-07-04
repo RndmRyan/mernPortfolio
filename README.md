@@ -1,2 +1,2 @@
-# MERN Portfolio
- 
+# mernPortfolio
+ Portfolio of MERN Projects
