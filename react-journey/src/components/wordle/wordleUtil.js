@@ -33,7 +33,7 @@ export const handleBackspace = (board, currentRow, currentCell) => {
 };
 
 export const evaluateGuess = async (guess) => {
-  const response = await fetch('http://localhost:2010/evaluate', {
+  const response = await fetch('https://mern-portfolio-backend-fawn.vercel.app/evaluate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const evaluateGuess = async (guess) => {
 };
 
 export const fetchTargetWord = async () => {
-  const response = await fetch('http://localhost:2010/getword');
+  const response = await fetch('https://mern-portfolio-backend-fawn.vercel.app/getword');
   const data = await response.json();
   return data.word;
 };
